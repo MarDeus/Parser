@@ -24,7 +24,7 @@ def file_parse():                                               # Function to pa
             contents = search_file.read()
             data = re.findall(r"(.*?)", contents, re.I)                 # Regex to search through the file, case ignored
             data_dict.append(data)                          # Appends the data found to a list in order to be split apart and check for originality.
-    with open('C:\Users\Phillippe\Documents\Programming\DDS\mhamill.txt', 'w') as document:
+    with open('[FILE LOCATION]', 'w') as document:
         for item in str(suspicious_dict).split(","):
             while item not in overflow:                         # Checks the data through a list in order to rid of duplicates
                 overflow.append(item)
