@@ -28,7 +28,7 @@ def file_parse():                                               # Function to pa
         for item in str(suspicious_dict).split(","):
             while item not in overflow:                         # Checks the data through a list in order to rid of duplicates
                 overflow.append(item)
-                document.write("%s\n" % item)          # Python3
+                document.write("%s\n" % item)          # Python3, No more Python 2
 
 file_parse()
 
